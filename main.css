@@ -1,129 +1,183 @@
-img{
-     max-width: 100%;
+/* General image styling */
+img {
+    max-width: 100%;
     height: auto;
- }
- .card {
-    background-image: linear-gradient( #ffff99,#ff99cc);
-    width: 80%;  
-    max-width: 500px;  
-    text-align: center;
-    margin: 30px auto;  
-    height: 450px;
-    border-radius: 15px;
-    padding: 20px;  
 }
- .input{
+
+/* Card styling */
+.card {
+    background-image: linear-gradient( #ffff99, #ff99cc);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    margin: 30px auto;
+    height: auto; /* Make height flexible */
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Input styling */
+.input {
     border-radius: 25px;
     border: white;
     width: 200px;
     padding: 8px;
- }
- .but{
+}
+
+/* Button styling */
+.but {
     border-radius: 150px;
-  margin-top: 30px;
-  border: white;
- }
- .img{
+    margin-top: 30px;
+    border: white;
+}
+
+/* Image inside card styling */
+.img {
     height: 90px;
     padding-top: 30px;
     width: 92px;
- }
-.weather h1,h2{
+}
+
+/* Weather heading */
+.weather h1, .weather h2 {
     color: white;
 }
-.details{
+
+/* Details flexbox styling */
+.details {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: auto;
+    height: auto; /* Make height flexible */
     padding-top: 30px;
-    padding-bottom: 10px;   
+    padding-bottom: 10px;
 }
-.col img{
+
+/* Columns inside details */
+.col img {
     width: 40px;
-   height: 40px;
+    height: 40px;
     margin-right: 10px;
 }
 
+/* Text styling */
 .text h4 {
     color: white;
-   font-size: 12px;
+    font-size: 12px;
+}
 
-}
-.col{
+/* Column styling */
+.col {
     display: flex;
-   text-align: left;
-   align-items: center;
+    text-align: left;
+    align-items: center;
 }
-.weather{
+
+/* Hidden weather section */
+.weather {
     display: none;
 }
-.error{
+
+/* Error message styling */
+.error {
     text-align: left;
-    margin-left:30px ;
+    margin-left: 30px;
     color: white;
     font-size: 20px;
     display: none;
     padding-top: 130px;
     padding-left: 60px;
-
 }
+
+/* Responsive styling for screens <= 768px */
 @media (max-width: 768px) {
+    /* Card adjustments */
     .card {
         width: 90%;
-        height: auto; 
-        padding: 15px;  
+        height: auto;
+        padding: 15px;
     }
+
+    /* Input adjustments */
     .input {
-        width: 100%;  
-        padding: 10px;  
+        width: 100%;
+        padding: 10px;
     }
+
+    /* Button image adjustments */
     .but img {
-        width: 30px; 
+        width: 30px;
         height: 30px;
     }
+
+    /* Details layout changes */
     .details {
-        flex-direction: column;  
+        flex-direction: column;
         align-items: flex-start;
     }
+
+    /* Column image size */
     .col img {
-        width: 30px; 
+        width: 30px;
         height: 30px;
     }
+
+    /* Text size adjustments */
     .text h4 {
-        font-size: 14px;  
+        font-size: 14px;
     }
 }
 
-
+/* Responsive styling for screens <= 480px */
 @media (max-width: 480px) {
+    /* Card adjustments */
     .card {
-        width: 100%; 
-        margin-left: 0;  
+        width: 100%;
+        margin-left: 0;
     }
+
+    /* Input adjustments */
     .input {
-        width: 100%;  
+        width: 100%;
     }
+
+    /* Image inside card */
     .img {
-        width: 70px;  
+        width: 70px;
         height: 70px;
     }
-    .weather h1, h2 {
-        font-size: 18px;  
+
+    /* Weather heading adjustments */
+    .weather h1, .weather h2 {
+        font-size: 18px;
     }
+
+    /* Error message adjustments */
     .error {
-        font-size: 18px;  
-        padding-left: 20px; 
+        font-size: 18px;
+        padding-left: 20px;
     }
+
+    /* Details padding adjustments */
     .details {
-        padding-top: 20px;  
+        padding-top: 20px;
     }
 }
 
-
+/* Responsive styling for screens >= 1200px */
 @media (min-width: 1200px) {
     .card {
-        width: 25%; 
-        max-width: 500px; 
+        width: 40%; /* Adjust to prevent too narrow on wide screens */
+        max-width: 500px;
+    }
+}
+
+/* Viewport meta tag for better scaling on mobile */
+@media screen and (max-width: 768px) {
+    /* Ensure viewport settings work well on mobile */
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
