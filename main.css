@@ -1,132 +1,156 @@
-img{
-    height: auto;
-     max-width: 100%; 
-    object-fit: contain;
- }
- .card {
-    background-image: linear-gradient( #ffff99,#ff99cc);
-    width: 80%;  
-    max-width: 500px;  
-    text-align: center;
-    margin: 30px auto;  
-    height: auto;
-    border-radius: 15px;
-    padding: 20px;  
+/* Base styles for images */
+img {
+    max-width: 100%;  /* Makes images responsive */
+    height: auto;     /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure image fits within the container */
 }
- .input{
+
+/* Ensure card layout works */
+.card {
+    background-image: linear-gradient(#ffff99, #ff99cc);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    margin: 30px auto;
+    height: auto; /* Auto height for responsiveness */
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.input {
     border-radius: 25px;
-    border: white;
+    border: 1px solid white;
     width: 200px;
     padding: 8px;
- }
- .but{
+}
+
+.but {
     border-radius: 150px;
-  margin-top: 30px;
-  border: white;
- }
- .img{
-   max-width: 92px;
+    margin-top: 30px;
+    border: 1px solid white;
+}
+
+.img {
+    max-width: 92px;
     max-height: 92px;
     padding-top: 30px;
-     margin: 0 auto;
-     object-fit: contain;
- }
-.weather h1,h2{
+    margin: 0 auto; /* Center image horizontally */
+    object-fit: contain; /* Maintain aspect ratio and fit the image within the box */
+}
+
+.weather h1, h2 {
     color: white;
 }
-.details{
+
+.details {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 40px;
     padding-top: 30px;
-    padding-bottom: 10px;   
+    padding-bottom: 10px;
 }
-.col img{
+
+.col img {
     width: 40px;
-   height: 40px;
+    height: 40px;
     margin-right: 10px;
 }
 
 .text h4 {
     color: white;
-   font-size: 12px;
+    font-size: 12px;
+}
 
-}
-.col{
+.col {
     display: flex;
-   text-align: left;
-   align-items: center;
+    text-align: left;
+    align-items: center;
 }
-.weather{
+
+.weather {
     display: none;
 }
-.error{
+
+.error {
     text-align: left;
-    margin-left:30px ;
+    margin-left: 30px;
     color: white;
     font-size: 20px;
     display: none;
     padding-top: 130px;
     padding-left: 60px;
-
 }
+
+/* Media queries */
+
+/* For tablets and larger phones */
 @media (max-width: 768px) {
     .card {
         width: 90%;
-        height: auto; 
-        padding: 15px;  
+        height: auto;
+        padding: 15px;
     }
+
     .input {
-        width: 100%;  
-        padding: 10px;  
+        width: 100%;
+        padding: 10px;
     }
+
     .but img {
-        width: 30px; 
+        width: 30px;
         height: 30px;
     }
+
     .details {
-        flex-direction: column;  
+        flex-direction: column;
         align-items: flex-start;
     }
+
     .col img {
-        width: 30px; 
+        width: 30px;
         height: 30px;
     }
+
     .text h4 {
-        font-size: 14px;  
+        font-size: 14px;
     }
 }
 
-
+/* For smaller phones */
 @media (max-width: 480px) {
     .card {
-        width: 100%; 
-        margin-left: 0;  
+        width: 100%;
+        margin-left: 0;
     }
+
     .input {
-        width: 100%;  
+        width: 100%;
     }
+
     .img {
-        width: 70px;  
+        width: 70px;
         height: 70px;
     }
+
     .weather h1, h2 {
-        font-size: 18px;  
+        font-size: 18px;
     }
+
     .error {
-        font-size: 18px;  
-        padding-left: 20px; 
+        font-size: 18px;
+        padding-left: 20px;
     }
+
     .details {
-        padding-top: 20px;  
+        padding-top: 20px;
     }
 }
 
-
+/* For very large screens (larger desktops) */
 @media (min-width: 1200px) {
     .card {
-        width: 25%; 
-        max-width: 500px; 
+        width: 25%;
+        max-width: 500px;
     }
 }
