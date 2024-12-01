@@ -10,23 +10,23 @@
 <div class="card">
         <div class="search">
             <input type="search" placeholder="Enter the city" class="input">
-            <button class="but" ><img src="images/search.jpg"></button>
+            <button class="but" ><img src="search.jpg"></button>
         </div>
         <div class="error">Invalid city name</div>
     <div class="weather">
-            <img src="images/normal.png" class="img">
+            <img src="normal.png" class="img">
             <h1 class="temp"> 25°C</h1>
             <h2 class="city">Moradabad</h1>
         <div class="details">
             <div class="col">
-                    <img src="images/humi.jpeg" class="humi"><br>
+                    <img src="humi.jpeg" class="humi"><br>
              <div class="text"> 
                <h4 class="hum">25%</h4> 
                <h4>Humidity</h4>
             </div>
             </div>
            <div class="col">
-                <img src="images/wind.jpeg" class="wind">
+                <img src="wind.jpeg" class="wind">
                 <div class="text">
                     <h4 class="hawa"> 25 Km/H</h4>
                    <h4> Wind</h4> 
@@ -54,16 +54,16 @@
             document.querySelector(".hum").innerHTML=data.main.humidity+"%";
             document.querySelector(".hawa").innerHTML=Math.round(data.wind.speed) +" km/h";
            if(data.weather[0].main=="Clouds"){
-             icon.src="images/cloudy.jpeg";
+             icon.src="cloudy.jpeg";
            }
            else if(data.weather[0].main=="snow"){
-            icon.src="images/snow.jpeg";
+            icon.src="snow.jpeg";
            }
            else if(data.weather[0].main=="Clear"){
-             icon.src="images/clear.jpeg";
+             icon.src="clear.jpeg";
            }
            else if(data.weather[0].main=="Rain"){
-            icon.src="images/rain.jpeg";
+            icon.src="rain.jpeg";
            }
      document.querySelector(".weather").style.display="block";
            document.querySelector(".error").style.display="none";
