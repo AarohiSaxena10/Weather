@@ -1,6 +1,7 @@
 img{
     height: auto;
      max-width: 100%; 
+    object-fit: contain;
  }
  .card {
     background-image: linear-gradient( #ffff99,#ff99cc);
@@ -24,9 +25,11 @@ img{
   border: white;
  }
  .img{
-    height: 90px;
+   max-width: 92px;
+    max-height: 92px;
     padding-top: 30px;
-    width: auto;
+     margin: 0 auto;
+     object-fit: contain;
  }
 .weather h1,h2{
     color: white;
