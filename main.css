@@ -1,0 +1,69 @@
+img{
+    height: 20px;
+    width: 30px;
+ }
+ .card {
+    background-image: linear-gradient( #ffff99,#ff99cc);
+    width: 25%;
+   text-align: center;
+   margin-left: 500px;
+   height: 450px;
+   border-radius: 15px;
+   margin-top: 30px;
+ }
+ .input{
+    border-radius: 25px;
+    border: white;
+    width: 200px;
+    padding: 8px;
+ }
+ .but{
+    border-radius: 150px;
+  margin-top: 30px;
+  border: white;
+ }
+ .img{
+    height: 90px;
+    padding-top: 30px;
+    width: 92px;
+ }
+.weather h1,h2{
+    color: white;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;   
+}
+.col img{
+    width: 40px;
+   height: 40px;
+    margin-right: 10px;
+}
+
+.text h4 {
+    color: white;
+   font-size: 12px;
+
+}
+.col{
+    display: flex;
+   text-align: left;
+   align-items: center;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left:30px ;
+    color: white;
+    font-size: 20px;
+    display: none;
+    padding-top: 130px;
+    padding-left: 60px;
+
+}
